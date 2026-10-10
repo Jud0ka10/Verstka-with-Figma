@@ -116,7 +116,58 @@
          <a href="" class="see-all">ПОСМОТРЕТЬ</a>
     </div>
 
+    <div class="container email">
+        <h3>Ещё</h3>
+        <p>Почта поддержки и авторов сайта</p>
+        <div class="block">
+            <div>
+                <h4>Остановись тут</h4>
+                <p>Подпишись на наши соцсети, а также ты можешь задать вопрос в поддержку</p>
+            </div>
+            <div>
+                <input type="email" id="emailField" placeholder="Введи адрес почты">
+                <button onclick="checkEmail()">Продолжить</button>
+            </div>
+        </div>
+    </div>
+
   </div>
+  <hr>
+  <p>Страница создана в 2026г, она полностью соотвествует закону РФ</p>
+
+  <footer>
+    <div class="block container">
+        <div>
+            <span class="logo">Лого</span>
+            <p>Еще больше информации в наших пабликах</p>
+
+        </div>
+        <div>
+            <h4>Наши соцсети </h4>
+            <ul> 
+            <li>Играть</li>
+            <li>Достижения</li>
+            <li>Карьера</li>
+            <li>Контакты</li>
+        </ul>
+        </div>
+        <div>
+            <h4>Наши контакты</h4>
+            <p>Сообщай нам об ошибках, замечаниях и о  твоях идеях и пожеланиях!</p>
+            <p>+777777777</p>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+    function checkEmail() {
+        let email = document.querySelector('#emailField').value;
+        if(!email.includes('@')) alert('Нет символа @');
+        else if(!email.includes('.')) alert('Нет символа .');
+        else alert('Все отлично!');
+        
+    }
+  </script>
 
 
 
